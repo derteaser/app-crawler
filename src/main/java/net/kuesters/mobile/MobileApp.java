@@ -6,14 +6,16 @@ public class MobileApp {
 	private String startUrl;
 	private String packageName;
 	private String appVersion;
+	private long phoneGapBuildId;
+	private byte[] contentsZip;
+	private String contentsZipFileName;
 
 	public MobileApp(String name, String startUrl, String packageName,
-			String appVersion, String description) {
+			String appVersion) {
 		this.name = name;
 		this.startUrl = startUrl;
 		this.packageName = packageName;
 		this.appVersion = appVersion;
-		this.description = description;
 	}
 
 	private String description;
@@ -36,6 +38,34 @@ public class MobileApp {
 
 	public String getDescription() {
 		return description;
+	}
+
+	public long getPhoneGapBuildId() {
+		return phoneGapBuildId;
+	}
+
+	public byte[] getContentsZip() {
+		return contentsZip;
+	}
+
+	public String getContentsZipFileName() {
+		return contentsZipFileName;
+	}
+
+	public void setPhoneGapBuildId(long phoneGapBuildId) {
+		this.phoneGapBuildId = phoneGapBuildId;
+	}
+
+	public void setContentsZip(byte[] contentsZip) {
+		this.contentsZip = contentsZip;
+	}
+
+	public void setContentsZipFileName(String contentsZipFileName) {
+		this.contentsZipFileName = contentsZipFileName;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 }
