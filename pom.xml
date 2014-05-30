@@ -7,7 +7,7 @@
   <groupId>net.kuesters.mobile</groupId>
   <artifactId>app-crawler</artifactId>
   <version>1.0</version>
-  <packaging>pom</packaging>
+  <packaging>jar</packaging>
   
   <dependencies>
 	<dependency>
